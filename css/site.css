@@ -34,11 +34,11 @@ h1, h2, {
   color: #3A0C0E;
 }
 
-a {
+a, h2 {
   text-decoration: none;
 }
 
-article, nav {
+#about_me, nav {
   padding: 30px;
   background-color: #E5BEC7;
   display: block;
