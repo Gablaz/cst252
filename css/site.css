@@ -29,24 +29,47 @@ h1 {
     font-size: 4em;
 }
 
-h1, h2, {
+h1, h2 {
   padding: 0px;
   color: #3A0C0E;
 }
 
-a, h2 {
+nav {
+  margin-top: 40px;
+}
+
+a  {
   text-decoration: none;
 }
 
-#about_me, nav {
-  padding: 30px;
-  background-color: #E5BEC7;
+#about_me {
   display: block;
-  margin: 50px 80px 0px 80px;
+  padding: 40px;
+  background-color: #e5bec7ad;
+  margin: 50px 80px 50px 80px;
 }
 
-p, a {
+#about_me {
+  display: inline-block;
+}
+
+#about_me img {
+  display: block;
+  width: 27vw;
+  height: auto;
+  max-width: 100%;
+  margin: 10px;
+  margin-left: 50px;
+  float: right;
+  border: double 5px white;
+}
+
+p, a, ul {
   color: #3A0C0E;
-  line-height: 20px;
+  line-height: 25px;
+  font-size: 1.2em;
+}
+
+ul {
   font-size: 1em;
 }
