@@ -1,6 +1,5 @@
 body  {
   background-image: url("../img/orange_clouds.jpeg");
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -36,6 +35,9 @@ article {
   margin-right: 0px;
   width: 30vw;
   float: right;
+  height: 500px;
+  overflow: hidden;
+  overflow: scroll;
 }
 
 .title {
