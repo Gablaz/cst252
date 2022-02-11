@@ -51,14 +51,6 @@ article {
   font-family: "Garamond", serif;
 }
 
-figure  {
-  text-align: center;
-}
-
-figcaption {
-  display: inline-block;
-}
-
 img {
   margin-bottom: 20px;
   width: 30vw;
