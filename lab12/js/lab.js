@@ -11,15 +11,16 @@
      $("#challenge").removeClass("purple");
  })
 
- //find challenge button and add click handler
+ //find problems button and add click handler
  $("#problems-button").click(function(){
- 		//toggle challenge div for text
+ 		//toggle problems div for text
      $("#problems").toggleClass("cursive");
      $("#problems").removeClass("serif");
  })
 
+//find results button and add click handler
  $("#results-button").click(function(){
- 		//toggle challenge div for text
+ 		//toggle results div for text
      $("#results").toggleClass("orange");
      $("#results").removeClass("purple");
      $("#results").toggleClass("cursive");
