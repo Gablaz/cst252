@@ -1,0 +1,64 @@
+body  {
+  background-image: url("../img/orange_clouds.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#content {
+  margin: 20px;
+  border: double 5px white;
+  padding: 10px;
+}
+
+.title, article, #link_to_homepage, #link_to_javascript {
+  margin: 10px;
+  background-color:rgba(255,255,255,0.5);
+  border: double 5px white;
+  color: #353b72;
+}
+
+article {
+  display: inline-block;
+  padding: 20px 20px 20px 30px;
+}
+
+#link_to_homepage, #link_to_javascript {
+  display: inline-block;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #353b72;
+}
+
+.title {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Garamond", serif;
+  color: #353b72;
+  font-size: 2em;
+}
+
+.summary_of_efforts {
+  color: #353b72;
+  font-family:"Garamond", serif;
+}
+
+.orange {
+  color: #f1844e;
+}
+
+.purple {
+  color: #353b72;
+}
+
+.cursive {
+  font-family: "Brush Script MT", cursive;
+}
+
+.serif {
+  font-family: "Garamond", serif;
+}
