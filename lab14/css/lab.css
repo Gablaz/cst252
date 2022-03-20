@@ -50,6 +50,10 @@ img {
   width: 30vw;
   max-width: 100%;
 }
+input {
+  display: block;
+  margin-top: 10px;
+}
 
 button {
   display:block;
