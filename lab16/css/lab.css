@@ -50,8 +50,9 @@ img {
   width: 30vw;
   max-width: 100%;
 }
+
 input {
-  display: block;
+  display:block;
   margin-top: 10px;
 }
 
