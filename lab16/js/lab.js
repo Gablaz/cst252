@@ -24,8 +24,8 @@ $("#my-button").click(function() {
    // Add a method info() to constructor
    this.info = function() {
      // return string with information
-     return("A " + this.color + " " + this.make + " " + this.model + " made in "+
-     this.year + ", it also has a " + this.extras);
+     return("A " + this.color + " " + this.make + " " + this.model + " made in "
+     + this.year + ", it also has a " + this.extras);
    }
   }
   // create car object and reference info() method
