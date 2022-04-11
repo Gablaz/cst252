@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 17: Object-Oriented Design</title>
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/lab.js" defer></script>
+</head>
+<body>
+	<div id="content">
+		<div class="title">
+			<h1>Lab 17: Object-Oriented Design</h1>
+		</div>
+
+		<article class="summary_of_efforts">
+			<section id="challenge">
+				<h2>Challenge</h2>
+					<p>The challenge of this lab was to experiment and explore Object
+						Oriented Design.</p>
+			</section>
+			<section id="problems">
+				<h2>Problems</h2>
+					<p>We did not encounter too many problems while working on this lab.
+						We referred to the lab instructions and the work we did while
+						following along with the in-class demonstration in order to complete
+						the lab. We followed the provided lecture notes and talked out our
+						pseudocode for a hangman game.</p>
+			</section>
+			<section id="results">
+				<h2>Results</h2>
+					<p>In the end, we successfully created an OOP for the game hangman. We
+						started by making a higher level pseudocode to help us understand
+						the concept better. From there we manipulated the objects to have
+						actions. </p>
+			</section>
+			<section id="oop_design">
+				<h2>OOP Design: Hangman</h2>
+					<h3>1. Understand the problem</h3>
+<pre>
+Set up the game and include gallows and players
+Prompt Player 1 for word
+Display length of word
+Prompt Player 2 for letter guess
+Validate Player 2 input
+Check if guess matches any of the letters within the word
+</pre>
+					<h3>2. Pseudocode the High Level Approach</h3>
+<pre>
+Set up the game initially
+  Create hangman gallows
+  Create a players
+	Render gallows
+	Establish 6 lives for Player 2
+	Prompt Player one for word
+	Validate input and display number of letters as underscores
+Start the game loop
+	Prompt Player 2 for letter guess
+	Validate guess and check with word
+	If the guess matches
+		Replace corresponding underscore with letter
+		Keep looping
+	Else
+		Remove one life
+		Keep looping
+	If all letters are guessed
+		Display Victory Message
+		Stop looping
+	If lives equal 0
+		Display "Game Over"
+		Stop Looping
+	</pre>
+					<h3>3. Assign Actions to Objects</h3>
+<pre>
+Set up the game initially [Hangman]
+  Create hangman gallows [Gallows]
+  Create a players [Player]
+	Render gallows [Gallows]
+	Establish 6 lives for Player 2 [Player]
+	Prompt Player one for word [Player]
+	Validate input and display number of letters as underscores [Player]
+Start the game loop [Hangman]
+	Prompt Player 2 for letter guess [Player]
+	Validate guess and check with word [Player]
+		If the guess matches [Hangman]
+		 	Replace corresponding underscore with letter
+			Keep looping
+		Else [Hangman]
+		 	Remove one life
+			Keep looping
+		If all letters are guessed[ Hangman]
+			Display Victory Message
+			Stop looping
+		If lives equal 0 [Hangman]
+			Display "Game Over"
+			Stop Looping
+	</pre>
+					<h3>4. Make Javascript-ish Pseudocode</h3>
+<pre>
+// Controls the game play class Hangman
+	// initialize
+		// set up gallows
+		// set up players
+		// assign variable lives
+		// prompt player 1 for word and store in array
+		// display new, equal numbered array with characters as underscores
+	// Play
+		//loop
+			// prompt player 2 for letter
+			// test if input matches original word/array
+				// if true, relace undersore with letter
+				// if false, decrese variable "lives" by 1
+		// check victory
+			// if string is = original string
+			// stop loop, display victory message
+		// check game over
+			// if lives = 0
+			// stop loop, display game over message
+</pre>
+			</section>
+
+			<section id="script">
+				<h2>Script Output</h2>
+					<h3>Add your own vehicle!</h3>
+						<input type="text" id="make"> Please enter the make of your vehicle</input>
+						<input type="text" id="model"> Please enter the model of your vehicle</input>
+						<input type="text" id="color"> Please enter the color of your vehicle</input>
+						<input type="text" id="year"> Please enter the year of your vehicle</input>
+						<input type="text" id="extras"> Any extra features?</input>
+						<button id="my-button">Submit</button>
+					<div id="output"></div>
+			</section>
+		</article>
+
+			<div id="link_to_homepage">
+				<a href="../index.html">Back to Homepage</a>
+			</div>
+
+			<div id="link_to_javascript">
+				<a href="js/lab.js">JavaScript</a>
+			</div>
+		</div>
+</body>
+</html>
