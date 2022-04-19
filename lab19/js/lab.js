@@ -3,7 +3,7 @@
  * Created:   04.18.2022
  * License: Public Domain
  **/
-
+/**
  // When a user clicks the button
  $("#activate").click(getAjax);
 
@@ -29,12 +29,10 @@ function getAjax() {
  .fail(function( xhr, status, errorThrown ) {
      console.log(errorThrown + " Status:" + status );
  });
-}
+}**/
 
-
-/**
 var url = "https://api.nasa.gov/planetary/apod";
- var apiKey = "Wcjdq71katscBPNTBFVCJhDgjVxdqZlTCSD7YXB4";
+var apiKey = "Wcjdq71katscBPNTBFVCJhDgjVxdqZlTCSD7YXB4";
 
 // When a user clicks the button
 $("#activate").click(getAjax);
@@ -52,12 +50,9 @@ function getAjax() {
       },
       // Whether this is a POST or GET request
       type: "GET",
-      // The type of data we expect back
-      // dataType : "json",
   })
   // If the request succeeds
   .done(function( data ) {
-      //alert("Success!");
       thisData = data[0];
       console.log(data);
       fullUrl = thisData.url;
@@ -70,4 +65,4 @@ function getAjax() {
   .fail(function( xhr, status, errorThrown ) {
       console.log(errorThrown + " Status:" + status );
   });
-}**/
+}
