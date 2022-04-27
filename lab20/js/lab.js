@@ -24,6 +24,7 @@
    .done(function( data ) {
        //alert("Success!");
        console.log(data);
+       //declare variables and retrieve data
        var img = data.img;
        var title = data.title;
        var alt = data.alt;
